@@ -2,37 +2,58 @@
     font-family: CaviarDreams;
     src: url(fonts/CaviarDreams.ttf);
 }
+
 @font-face {
     font-family: Swiss;
     src: url(fonts/Swiss721BoldExtendedBT.ttf);
 }
 
 html {
-    background-color: gold;
+    background-color: lightgray;
+    background-image: url(images/880x495Background.jpg)
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    list-style: none;
 }
 
-nav {
+.nav {
     background-color: white;
-    padding: 20px 0px;
-    border: 2px solid white;
-    border-left: none;
-    border-right: none;
-    text-align: center
-}
-
-nav a {
-    text-align: none;
-    margin: 5%;
-    font-size: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5vh 0px;
+    padding: 5vh 0px;
     font-family: Swiss;
-    color: black;
+
+}
+.nav li {
+    margin: 0px 2%;
 }
 
+.left, .right, .bottom {
+    min-height: 20vh;
+    background-color: darkgray;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    background-color: red;
+    width: 70%;
+}
+
+.bottom {
+    width: 100%;
+}
 section {
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    font-family: CaviarDreams;
 }
