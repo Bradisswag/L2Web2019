@@ -29,15 +29,29 @@ html {
     background-color: white;
     display: flex;
     justify-content: flex-end;
-    margin: 5vh 0px;
-    padding: 3vh 0px;
+    margin-top: 5vh;
+    padding: 1vh 0px;
     font-family: Swiss1;
 }
 .nav li {
     margin: 0px 3%;
     text-align: right;
     font-family: Swiss2;
-    font-size: 4vh;
+    font-size: 6vh;
+}
+
+a {
+    color: black;
+}
+a:active {
+    color: mediumpurple;
+}
+img {
+    width: 8%;
+    margin-left: 2vh;
+    position: absolute;
+    text-align: left;
+    margin-top: -3vh;
 }
 
 .left, .right, .bottom {
@@ -50,7 +64,7 @@ html {
 }
 
 .right {
-    background-color: red;
+    background-color: dimgray;
     width: 70%;
 }
 
@@ -63,4 +77,5 @@ section {
     width: 90%;
     margin: auto;
     font-family: CaviarDreams;
+    margin-top: 20vh;
 }
