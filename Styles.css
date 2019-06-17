@@ -4,13 +4,18 @@
 }
 
 @font-face {
-    font-family: Swiss;
+    font-family: Swiss1;
     src: url(fonts/Swiss721BoldExtendedBT.ttf);
+}
+@font-face {
+    font-family: Swiss2;
+    src: url(fonts/Swiss721ExtendedBT.ttf);
 }
 
 html {
     background-color: lightgray;
-    background-image: url(images/880x495Background.jpg)
+    background-image: url(images/880x495Background.jpg);
+    
 }
 
 * {
@@ -25,12 +30,14 @@ html {
     display: flex;
     justify-content: flex-end;
     margin: 5vh 0px;
-    padding: 5vh 0px;
-    font-family: Swiss;
-
+    padding: 3vh 0px;
+    font-family: Swiss1;
 }
 .nav li {
-    margin: 0px 2%;
+    margin: 0px 3%;
+    text-align: right;
+    font-family: Swiss2;
+    font-size: 4vh;
 }
 
 .left, .right, .bottom {
