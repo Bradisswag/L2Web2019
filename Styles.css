@@ -3,10 +3,12 @@
     src: url(fonts/CaviarDreams.ttf);
 }
 
+/* This is the First Swiss font that is more bolder than Swiss2 */
 @font-face {
     font-family: Swiss1;
     src: url(fonts/Swiss721BoldExtendedBT.ttf);
 }
+
 @font-face {
     font-family: Swiss2;
     src: url(fonts/Swiss721ExtendedBT.ttf);
@@ -15,7 +17,7 @@
 html {
     background-color: lightgray;
     background-image: url(images/880x495Background.jpg);
-    
+
 }
 
 * {
@@ -29,48 +31,81 @@ html {
     background-color: white;
     display: flex;
     justify-content: flex-end;
-    margin-top: 5vh;
+    margin-top: 3vh;
     padding: 1vh 0px;
-    font-family: Swiss1;
+    font-family: CaviarDreams;
 }
+
 .nav li {
     margin: 0px 3%;
     text-align: right;
-    font-family: Swiss2;
-    font-size: 6vh;
+    font-family: CaviarDreams;
+    font-size: 5vh;
+    margin-right: 15vh;
+    font-weight: bold;
 }
 
 a {
     color: black;
 }
+
 a:active {
     color: mediumpurple;
 }
+
+a:hover {
+    color: mediumpurple
+}
+
 img {
-    width: 8%;
+    width: 5%;
     margin-left: 2vh;
     position: absolute;
     text-align: left;
-    margin-top: -3vh;
+    margin-top: -1vh;
 }
 
-.left, .right, .bottom {
-    min-height: 20vh;
-    background-color: darkgray;
+.left,
+.right,
+.bottom {
+    min-height: 30vh;
+    background-color: black;
+    color: white;
 }
 
 .left {
     width: 30%;
 }
 
+h1 {
+    margin-top: 5vh;
+}
+
 .right {
-    background-color: dimgray;
+    background-color: black;
     width: 70%;
+}
+
+.rt {
+    text-align: center;
+    margin-top: 5vh;
 }
 
 .bottom {
     width: 100%;
 }
+
+footer {
+    color: white;
+    vertical-align: bottom;
+    padding: 1vh;
+    margin-top: 3vh;
+    text-align: inherit;
+    width: 99%;
+    position: inherit;
+
+}
+
 section {
     display: flex;
     flex-wrap: wrap;
@@ -78,4 +113,6 @@ section {
     margin: auto;
     font-family: CaviarDreams;
     margin-top: 20vh;
+    font-size: 2vh;
+    text-align: center;
 }
