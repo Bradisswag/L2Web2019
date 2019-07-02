@@ -17,7 +17,7 @@
 html {
     background-color: lightgray;
     background-image: url(images/880x495Background.jpg);
-
+    background-attachment: fixed;
 }
 
 * {
@@ -116,4 +116,45 @@ section {
     margin-top: 20vh;
     font-size: 2vh;
     text-align: center;
+}
+
+section1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    font-family: CaviarDreams;
+    margin-top: 20vh;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.productsection {
+	background-color: rgba(255, 255, 255, 0.4);
+	min-height: 30vh;
+	margin: auto;
+	margin-top: 1vh;
+	width: 90%;
+	border-radius: 2vh;
+	padding-top: 1vh;
+    padding-bottom: 5vh;
+	font-family: CaviarDreams;
+	text-align: center;
+	font-size: 2vh;
+	text-decoration: none;
+}
+.products {
+    flex-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.4);
+	min-height: 30vh;
+	margin: auto;
+	margin-top: 5vh;
+	width: 90%;
+	border-radius: 2vh;
+	padding-top: 5vh;
+	font-family: CaviarDreams;
+	text-align: center;
+	font-size: 2vh;
+	text-decoration: none;
+    padding-bottom: 2vh;
 }
