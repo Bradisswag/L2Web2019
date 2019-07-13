@@ -1,33 +1,32 @@
-@font-face {
+@font-face { /* Main Font */
     font-family: CaviarDreams;
     src: url(fonts/CaviarDreams.ttf);
 }
 
-/* This is the First Swiss font that is more bolder than Swiss2 */
-@font-face {
+@font-face { /* Secondary Font */
     font-family: Swiss1;
     src: url(fonts/Swiss721BoldExtendedBT.ttf);
 }
 
-@font-face {
+@font-face { /* Secondary Swiss font */
     font-family: Swiss2;
     src: url(fonts/Swiss721ExtendedBT.ttf);
 }
 
-html {
+html { /* Main Page */
     background-color: lightgray;
     background-image: url(images/880x495Background.jpg);
     background-attachment: fixed;
 }
 
-* {
+* { /* Includes everything */
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     list-style: none;
 }
 
-.nav {
+.nav { /* Nav Bar (Navigation Bar) */
     background-color: white;
     display: flex;
     justify-content: flex-end;
@@ -36,7 +35,7 @@ html {
     font-family: CaviarDreams;
 }
 
-.nav li {
+.nav li { /* Text for the Nav Bar */
     margin: 0px 3%;
     text-align: right;
     font-family: CaviarDreams;
@@ -45,19 +44,19 @@ html {
     font-weight: bold;
 }
 
-a {
+a { /* Text color on the nav bar */
     color: black;
 }
 
-a:active {
+a:active { /* Link color if active */
     color: mediumpurple;
 }
 
-a:hover {
+a:hover { /* Link color if hovered over the text */
     color: mediumpurple
 }
 
-img {
+img { /* Skinz Logo on the left of the Nav Bar */
     width: 5%;
     margin-left: 2vh;
     position: absolute;
@@ -67,36 +66,37 @@ img {
 
 .left,
 .right,
-.bottom {
+.bottom { /* Body on the Home page */
     min-height: 30vh;
     background-color: black;
     color: white;
 }
 
-.left {
+.left { /* Body on the Home page */
     width: 30%;
 }
 
-h1 {
+h1 { /* Text */
     margin-top: 5vh;
     color: white;
+    font-size: 5vh;
 }
 
-.right {
+.right { /* Body on the Home page */
     background-color: black;
     width: 70%;
 }
 
-.rt {
+.rt { /* Image for the "Click the image to view our products" icon */
     text-align: center;
     margin-top: 5vh;
 }
 
-.bottom {
+.bottom { /* Body for the Home page */
     width: 100%;
 }
 
-footer {
+footer { /* Footer on all pages */
     color: white;
     vertical-align: bottom;
     padding: 1vh;
@@ -107,7 +107,7 @@ footer {
 
 }
 
-section {
+section { /* Section oon the Home page */
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -118,7 +118,7 @@ section {
     text-align: center;
 }
 
-section1 {
+section1 { /* Section for Info, Product, and Contact page('s) */
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -129,7 +129,7 @@ section1 {
     text-align: center;
 }
 
-.productsection {
+.productsection { /* Product background section */
     background-color: rgba(255, 255, 255, 0.4);
     min-height: 30vh;
     margin: auto;
@@ -144,7 +144,7 @@ section1 {
     text-decoration: none;
 }
 
-.products {
+.products { /* Each Products box. */
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.4);
     min-height: 30vh;
@@ -160,7 +160,7 @@ section1 {
     padding-bottom: 2vh;
 }
 
-.lp {
+.lp { /* Laptop Products images */
     height: 40vh;
     width: auto;
     margin-left: 2vh;
@@ -168,3 +168,34 @@ section1 {
     text-align: center;
     margin-top: 0vh;
 }
+h2 { /* Text */
+    color: white;
+    font-size: 3.5vh;
+}
+h3 { /* Text */
+    color: white;
+    font-size: 2.5vh;
+}
+.infosection { /* Background  in the Info page.*/
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-height: 30vh;
+    margin: auto;
+    margin-top: 1vh;
+    width: 90%;
+    border-radius: 2vh;
+    padding-top: 1vh;
+    font-family: CaviarDreams;
+    text-align: center;
+    font-size: 2vh;
+    text-decoration: none;
+    padding-bottom: 2vh;
+}
+
+.text5 { /* Text */
+    color: red;
+    font-size: 4.5vh;
+    font-weight: bolder;
+}
+
+/* Calculator */
