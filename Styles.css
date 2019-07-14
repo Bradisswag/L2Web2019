@@ -1,42 +1,49 @@
-@font-face { /* Main Font */
+@font-face {
+    /* Main Font */
     font-family: CaviarDreams;
     src: url(fonts/CaviarDreams.ttf);
 }
 
-@font-face { /* Secondary Font */
+@font-face {
+    /* Secondary Font */
     font-family: Swiss1;
     src: url(fonts/Swiss721BoldExtendedBT.ttf);
 }
 
-@font-face { /* Secondary Swiss font */
+@font-face {
+    /* Secondary Swiss font */
     font-family: Swiss2;
     src: url(fonts/Swiss721ExtendedBT.ttf);
 }
 
-html { /* Main Page */
+html {
+    /* Main Page */
     background-color: lightgray;
     background-image: url(images/880x495Background.jpg);
     background-attachment: fixed;
 }
 
-* { /* Includes everything */
-    margin: 0px;
-    padding: 0px;
+* {
+    /* Includes everything */
+    margin: 0vh;
+    padding: 0vh;
     text-decoration: none;
     list-style: none;
 }
 
-.nav { /* Nav Bar (Navigation Bar) */
+.nav {
+    /* Nav Bar (Navigation Bar) */
     background-color: white;
     display: flex;
     justify-content: flex-end;
     margin-top: 3vh;
-    padding: 1vh 0px;
+    padding: 1vh 0vh;
     font-family: CaviarDreams;
 }
 
-.nav li { /* Text for the Nav Bar */
-    margin: 0px 3%;
+.nav li {
+    /* Text for the Nav Bar */
+    margin: 0vh 3%;
     text-align: right;
     font-family: CaviarDreams;
     font-size: 5vh;
@@ -44,19 +51,23 @@ html { /* Main Page */
     font-weight: bold;
 }
 
-a { /* Text color on the nav bar */
+a {
+    /* Text color on the nav bar */
     color: black;
 }
 
-a:active { /* Link color if active */
+a:active {
+    /* Link color if active */
     color: mediumpurple;
 }
 
-a:hover { /* Link color if hovered over the text */
+a:hover {
+    /* Link color if hovered over the text */
     color: mediumpurple
 }
 
-img { /* Skinz Logo on the left of the Nav Bar */
+img {
+    /* Skinz Logo on the left of the Nav Bar */
     width: 5%;
     margin-left: 2vh;
     position: absolute;
@@ -64,39 +75,58 @@ img { /* Skinz Logo on the left of the Nav Bar */
     margin-top: -1vh;
 }
 
-.left,
-.right,
-.bottom { /* Body on the Home page */
-    min-height: 30vh;
-    background-color: black;
-    color: white;
+.VisitCounter {
+    /* Visit Counter */
+    position: absolute;
+    text-align: right;
 }
 
-.left { /* Body on the Home page */
+.left,
+.right,
+.bottom {
+    /* Body on the Home page */
+    min-height: 30vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 2vh;
+}
+
+.left {
+    /* Body on the Home page */
     width: 30%;
 }
 
-h1 { /* Text */
+h1 {
+    /* Text */
     margin-top: 5vh;
     color: white;
     font-size: 5vh;
 }
 
-.right { /* Body on the Home page */
-    background-color: black;
-    width: 70%;
+.producticon { /* Product Icon */
+    text-align: center;
+    padding: 1vh;
 }
 
-.rt { /* Image for the "Click the image to view our products" icon */
+.right {
+    /* Body on the Home page */
+    width: 70%;
+    padding: 0vh;
+}
+
+.rt {
+    /* Image for the "Click the laptop icon to view our products" */
     text-align: center;
     margin-top: 5vh;
 }
 
-.bottom { /* Body for the Home page */
+.bottom {
+    /* Body for the Home page */
     width: 100%;
 }
 
-footer { /* Footer on all pages */
+footer {
+    /* Footer on all pages */
     color: white;
     vertical-align: bottom;
     padding: 1vh;
@@ -107,29 +137,33 @@ footer { /* Footer on all pages */
 
 }
 
-section { /* Section oon the Home page */
+
+section {
+    /* Section oon the Home page */
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
     font-family: CaviarDreams;
-    margin-top: 20vh;
+    margin-top: 10vh;
     font-size: 2vh;
     text-align: center;
 }
 
-section1 { /* Section for Info, Product, and Contact page('s) */
+section1 {
+    /* Section for Info, Product, and Contact page('s) */
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
     font-family: CaviarDreams;
-    margin-top: 20vh;
+    margin-top: 10vh;
     font-size: 2vh;
     text-align: center;
 }
 
-.productsection { /* Product background section */
+.productsection {
+    /* Product background section */
     background-color: rgba(255, 255, 255, 0.4);
     min-height: 30vh;
     margin: auto;
@@ -144,7 +178,35 @@ section1 { /* Section for Info, Product, and Contact page('s) */
     text-decoration: none;
 }
 
-.products { /* Each Products box. */
+.CLogos {
+    /* Group of Logos in Contact.html */
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.Contact-Logo {
+    /* Single Logos in Contact.html */
+    text-align: center;
+    width: 10%;
+	height: 10%;
+	position: relative;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    display: inline-flex;
+}
+
+.ContactMethods {
+    /* Main Contact Methods Group */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.products {
+    /* Each Products box. */
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.4);
     min-height: 30vh;
@@ -160,7 +222,8 @@ section1 { /* Section for Info, Product, and Contact page('s) */
     padding-bottom: 2vh;
 }
 
-.lp { /* Laptop Products images */
+.lp {
+    /* Laptop Products images */
     height: 40vh;
     width: auto;
     margin-left: 2vh;
@@ -168,15 +231,21 @@ section1 { /* Section for Info, Product, and Contact page('s) */
     text-align: center;
     margin-top: 0vh;
 }
-h2 { /* Text */
+
+h2 {
+    /* Text */
     color: white;
     font-size: 3.5vh;
 }
-h3 { /* Text */
+
+h3 {
+    /* Text */
     color: white;
     font-size: 2.5vh;
 }
-.infosection { /* Background  in the Info page.*/
+
+.contactsection {
+    /* Background  in the Info page.*/
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.4);
     min-height: 30vh;
@@ -192,10 +261,246 @@ h3 { /* Text */
     padding-bottom: 2vh;
 }
 
-.text5 { /* Text */
-    color: red;
+.infosection {
+    /* Background  in the Info page.*/
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.4);
+    min-height: 30vh;
+    margin: auto;
+    margin-top: 1vh;
+    width: 90%;
+    border-radius: 2vh;
+    padding-top: 1vh;
+    font-family: CaviarDreams;
+    text-align: center;
+    font-size: 2vh;
+    text-decoration: none;
+    padding-bottom: 2vh;
+}
+
+.text5 {
+    /* Text */
+    color: darkred;
     font-size: 4.5vh;
     font-weight: bolder;
+    border: 0.5vh solid red;
+    border-radius: 5vh;
+    padding: 1vh;
+    
 }
 
 /* Calculator */
+
+.Menu {
+    display: none;
+    position: relative;
+    border: 0.3vh solid red;
+    border-radius: 40vh;
+}
+
+/* Menu layouts */
+ul.Menu.-vertical {
+    display: inline-block;
+}
+
+ul.Menu.-floating {
+    display: block;
+    position: absolute;
+}
+
+/* Menu and menu-item layout */
+.Menu,
+.Menu li,
+.Menu li > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Menu li {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.Menu li > * {
+    display: block;
+    position: relative;
+}
+
+.Menu li > ul {
+    position: absolute;
+    min-width: 100%;
+    top: 0px;
+    left: 100%;
+}
+
+/* Menu behaviour */
+.Menu li > ul,
+.Menu.-floating {
+    display: none;
+}
+
+.Menu li > ul.-visible,
+ul.Menu.-floating.-visible {
+    display: block;
+}
+
+/* Menu animation */
+.Menu li > ul,
+.Menu.-floating {
+    opacity: 1;
+    transform: scale(1) translateY(0vh);
+    transform-origin: left top;
+}
+
+.Menu.-alignRight li > ul,
+.Menu.-floating.-alignRight {
+    transform-origin: right top;
+}
+
+.Menu li > ul.-animating,
+.Menu.-floating.-animating {
+    opacity: 0 !important;
+    transform: scale(0.96) translateX(-2vh);
+}
+
+.Menu li > ul.-animating {
+    z-index: -1 !important;
+}
+
+.Menu.-alignRight li > ul.-animating,
+.Menu.-floating.-alignRight.-animating {
+    transform: scale(0.96) translateX(2vh);
+}
+
+/* Submenu chevrons */
+.Menu li.-hasSubmenu > a:after {
+    display: block;
+    position: absolute;
+
+    width: 1vh;
+    height: 1vh;
+    right: 1vh;
+    bottom: 0vh;
+    top: 0vh;
+    margin: auto 0vh;
+
+    transform: rotate(45deg);
+    border-width: 0.2vh;
+    border-color: black;
+    border-style: solid solid none none;
+
+    content: "";
+}
+
+.Menu li.-hasSubmenu.-noChevron > a:after {
+    display: none;
+}
+
+/*
+** Configurable values
+*/
+/* Height of navbar, and menu items */
+/* All of these must be of equal value */
+.Menu {
+    line-height: 4vh;
+}
+
+.Menu li,
+.Menu li > :first-child {
+    height: 4vh;
+}
+
+.Menu *[data-icon]:before,
+.Menu .Icon {
+    width: 4vh;
+    height: 4vh;
+}
+
+.Menu *[data-icon] {
+    min-width: 4vh;
+    min-height: 4vh;
+    padding-left: 4vh;
+}
+
+/* Default font settings for menu */
+.Menu {
+    font-family: CaviarDreams;
+    font-size: 2.5vh;
+    font-weight: bolder;
+}
+
+/* For submenus */
+.Menu > li ul .Icon,
+.Menu.-floating .Icon,
+.Menu > li ul *[data-icon]:before,
+.Menu.-floating *[data-icon]:before,
+    {
+    font-size: 2.5vh;
+}
+
+/* Colours */
+/* Foreground */
+.Menu,
+.Menu li.-hasSubmenu > a:after {
+    color: black;
+    border-color: black;
+    /* chevron colour */
+}
+
+/* Background */
+.Menu ul,
+.Menu.-floating {
+    background: white;
+}
+
+/* Padding for each menu item */
+.Menu li > * {
+    padding: 0vh 2vh;
+}
+
+/* Indent of chevron */
+.Menu li li.-hasSubmenu > a:after,
+.Menu:not(.-horizontal) > li.-hasSubmenu > a:after {
+    right: 2vh;
+}
+
+.Menu li li.-hasSubmenu > a,
+.Menu:not(.-horizontal) > li.-hasSubmenu > a {
+    padding-right: 3vh;
+}
+
+/* Minimum width of dropdown menus */
+.Menu.-horizontal li > ul,
+.Menu.-floating {
+    min-width: 20vh;
+}
+
+/* Animation speed of dropdown menus */
+.Menu li > ul,
+.Menu.-floating {
+    transition: width 0.1s, height 0.1s, transform 0.1s, opacity 0.1s;
+}
+
+/* Styling of hyperlink text */
+.Menu li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Animation speed of :hover shading */
+.Menu li > a:first-child {
+    transition: background-color 0.2s;
+}
+
+/* Colour of :hover shading */
+.Menu li:hover > a:first-child,
+.Menu li.-active > a:first-child {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*
+** End configurable values
+*/

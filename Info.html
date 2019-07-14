@@ -14,6 +14,7 @@
         <li><a href="Contact.html">Contact</a></li>
         <li><a href="Info.html">Info</a></li>
     </ul>
+
     <section1>
         <div class="infosection">
             <h1>Info</h1>
@@ -25,29 +26,115 @@
             </div><br><br>
             <div class="calculator">
                 <h2>Calculator:</h2>
-                <h3>Calculate the size of your laptop using this awesome calculator!</h3>
-                
+                <h3>Get the size of your alienware laptop using this awesome calculator!</h3>
+
                 <h1 class="text5">CALCULATOR UNDER DEVELOPMENT</h1>
 
-                <div class="sizecalculator">
-                    <select>
-                        <option value="1">Dell</option>
-                        <option value="2">Alienware</option>
-                        <option value="3">Asus</option>
-                        <option value="4">MSI</option>
-                        <option value="5">Huawei</option>
-                        <option value="6">HP</option>
-                        <option value="7">Apple</option>
-                        <option value="8">Microsoft</option>
-                        <option value="9">Lenovo</option>
-                    </select>
-                </div>
+                <ul class="Menu -vertical">
+                    <li class="-hasSubmenu"> <a href="#">Alienware</a>
+                        <ul>
+                            <li class="-hasSubmenu"> <a href="#">Slim Alienware Laptops</a>
+                                <ul>
+                                    <li><a href="#">Alienware m17</a></li>
+                                    <li><a href="#">Alienware m15</a></li>
+                                    <li><a href="#">New Alienware m15</a></li>
+                                    <li><a href="#">Alienware Area-51m</a></li>
+                                </ul>
+                            </li>
+                            <li class="-hasSubmenu"> <a href="#">Bulkier Alienware Laptop</a>
+                                <ul>
+                                    <li><a href="#">Alienware 17</a></li>
+                                    <li><a href="#">Alienware 15</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <script>
+                    (function() {
+                        function $(selector, context) {
+                            context = context || document;
+                            return context["querySelectorAll"](selector);
+                        }
+
+                        function forEach(collection, iterator) {
+                            for (var key in Object.keys(collection)) {
+                                iterator(collection[key]);
+                            }
+                        }
+
+                        function showMenu(menu) {
+                            var menu = this;
+                            var ul = $("ul", menu)[0];
+
+                            if (!ul || ul.classList.contains("-visible")) return;
+
+                            menu.classList.add("-active");
+                            ul.classList.add("-animating");
+                            ul.classList.add("-visible");
+                            setTimeout(function() {
+                                ul.classList.remove("-animating")
+                            }, 25);
+                        }
+
+                        function hideMenu(menu) {
+                            var menu = this;
+                            var ul = $("ul", menu)[0];
+
+                            if (!ul || !ul.classList.contains("-visible")) return;
+
+                            menu.classList.remove("-active");
+                            ul.classList.add("-animating");
+                            setTimeout(function() {
+                                ul.classList.remove("-visible");
+                                ul.classList.remove("-animating");
+                            }, 300);
+                        }
+
+                        function hideAllInactiveMenus(menu) {
+                            var menu = this;
+                            forEach(
+                                $("li.-hasSubmenu.-active:not(:hover)", menu.parent),
+                                function(e) {
+                                    e.hideMenu && e.hideMenu();
+                                }
+                            );
+                        }
+
+                        window.addEventListener("load", function() {
+                            forEach($(".Menu li.-hasSubmenu"), function(e) {
+                                e.showMenu = showMenu;
+                                e.hideMenu = hideMenu;
+                            });
+
+                            forEach($(".Menu > li.-hasSubmenu"), function(e) {
+                                e.addEventListener("click", showMenu);
+                            });
+
+                            forEach($(".Menu > li.-hasSubmenu li"), function(e) {
+                                e.addEventListener("mouseenter", hideAllInactiveMenus);
+                            });
+
+                            forEach($(".Menu > li.-hasSubmenu li.-hasSubmenu"), function(e) {
+                                e.addEventListener("mouseenter", showMenu);
+                            });
+
+                            document.addEventListener("click", hideAllInactiveMenus);
+                        });
+                    })();
+
+                </script>
 
             </div>
         </div>
         <footer>
             <div class="footer">
-                <h2>&copy; Skinz 2019.</h2>
+                    <div class="VisitCounter">
+                        <script type="text/javascript" src="https://freehitcounters.org/count/293v"></script>
+                    </div>
+                <h2>&copy; Skinz 2019.
+                </h2>
             </div>
         </footer>
     </section1>
