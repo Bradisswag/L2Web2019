@@ -27,30 +27,35 @@
             <div class="calculator">
                 <h2>Calculator:</h2>
                 <h3>Get the size of your alienware laptop using this awesome calculator!</h3>
-
-                <h1 class="text5">CALCULATOR UNDER DEVELOPMENT</h1>
+                <br>
+                <br>
+                <!--<h1 class="text5"></h1>-->
 
                 <ul class="Menu -vertical">
-                    <li class="-hasSubmenu"> <a href="#">Alienware</a>
+                    <li class="-hasSubmenu"> <a href="#" id="Alienware">Alienware</a>
                         <ul>
-                            <li class="-hasSubmenu"> <a href="#">Slim Alienware Laptops</a>
+                            <li class="-hasSubmenu"> <a href="#" id="Alienware-Slim">Slim Alienware Laptops</a>
                                 <ul>
-                                    <li><a href="#">Alienware m17</a></li>
-                                    <li><a href="#">Alienware m15</a></li>
-                                    <li><a href="#">New Alienware m15</a></li>
-                                    <li><a href="#">Alienware Area-51m</a></li>
+                                    <li><a href="#" id="Alienware-m17">Alienware m17</a></li>
+                                    <li><a href="#" id="Alienware-m15">Alienware m15</a></li>
+                                    <li><a href="#" id="Alienware-New-m15">New Alienware m15</a></li>
+                                    <li><a href="#" id="Alienware-Area-51m">Alienware Area-51m</a></li>
                                 </ul>
                             </li>
-                            <li class="-hasSubmenu"> <a href="#">Bulkier Alienware Laptop</a>
+                            <li class="-hasSubmenu"> <a href="#" id="Alienware-Bulk">Bulkier Alienware Laptop</a>
                                 <ul>
-                                    <li><a href="#">Alienware 17</a></li>
-                                    <li><a href="#">Alienware 15</a></li>
+                                    <li><a href="#" id="Alienware-17">Alienware 17</a></li>
+                                    <li><a href="#" id="Alienware-15">Alienware 15</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                 </ul>
-
+                <br>
+                <br>
+                <h2>Your Display Size is: </h2>
+                <p class="Calculator-result" id="Result"></p>
+                <br>
                 <script>
                     (function() {
                         function $(selector, context) {
@@ -124,15 +129,53 @@
                         });
                     })();
 
-                </script>
+                    function wait(ms) {
+                        var start = new Date().getTime();
+                        var end = start;
+                        while (end < start + ms) {
+                            end = new Date().getTime();
+                        }
+                    }
+                    
+                    document.getElementById("Alienware").addEventListener("click", function(){
+                        document.getElementById("Result").innerHTML = "Select your model.";
+                    })
+                    /* Slim */
+                    document.getElementById("Alienware-m17").addEventListener("click", function() {
+                        wait(1000);
+                        document.getElementById("Result").innerHTML = "17.3 Inches";
+                    })
+                    document.getElementById("Alienware-m15").addEventListener("click", function() {
+                        wait(1000);
+                        document.getElementById("Result").innerHTML = "15.6 Inches";
+                    })
+                    document.getElementById("Alienware-New-m15").addEventListener("click", function() {
+                        wait(1000);
+                        document.getElementById("Result").innerHTML = "15.6 Inches";
+                    })
+                    document.getElementById("Alienware-Area-51m").addEventListener("click", function() {
+                        wait(1000);
+                        document.getElementById("Result").innerHTML = "17.3 Inches";
+                    })
 
+                    /* Bulkier */
+                    document.getElementById("Alienware-17").addEventListener("click", function() {
+                        wait(1000);
+                        document.getElementById("Result").innerHTML = "17.3 Inches";
+                    })
+                    document.getElementById("Alienware-15").addEventListener("click", function() {
+                        wait(1000);
+                        document.getElementById("Result").innerHTML = "15.6 Inches";
+                    })
+
+                </script>
             </div>
         </div>
         <footer>
             <div class="footer">
-                    <div class="VisitCounter">
-                        <script type="text/javascript" src="https://freehitcounters.org/count/293v"></script>
-                    </div>
+                <div class="VisitCounter">
+                    <script type="text/javascript" src="https://freehitcounters.org/count/293v"></script>
+                </div>
                 <h2>&copy; Skinz 2019.
                 </h2>
             </div>

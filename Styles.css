@@ -286,7 +286,7 @@ h6 {
 }
 
 .text5 {
-    /* Text */
+    /* Red Text with boarder */
     color: darkred;
     font-size: 4.5vh;
     font-weight: bolder;
@@ -298,7 +298,15 @@ h6 {
 
 /* Calculator */
 
+.Calculator-result {
+    /* Result of the calculation */
+    font-weight: bolder;
+    font-size: 5vh;
+    color: greenyellow;
+}
+
 .Menu {
+    /* Menu for the calculator selection */
     display: none;
     position: relative;
     border: 0.3vh solid red;
@@ -410,7 +418,6 @@ ul.Menu.-floating.-visible {
 ** Configurable values
 */
 /* Height of navbar, and menu items */
-/* All of these must be of equal value */
 .Menu {
     line-height: 4vh;
 }
