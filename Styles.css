@@ -75,7 +75,7 @@ img {
     margin-top: -1vh;
 }
 
-.VisitCounter {
+.visitcounter {
     /* Visit Counter */
     position: absolute;
     text-align: right;
@@ -103,7 +103,8 @@ h1 {
     font-size: 5vh;
 }
 
-.producticon { /* Product Icon */
+.producticon {
+    /* Product Icon */
     text-align: center;
     padding: 1vh;
 }
@@ -138,8 +139,8 @@ footer {
 }
 
 
-section {
-    /* Section oon the Home page */
+.section2 {
+    /* Section on the Home page */
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -150,7 +151,7 @@ section {
     text-align: center;
 }
 
-section1 {
+.section1 {
     /* Section for Info, Product, and Contact page('s) */
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +179,7 @@ section1 {
     text-decoration: none;
 }
 
-.CLogos {
+.clogos {
     /* Group of Logos in Contact.html */
     width: 80%;
     display: block;
@@ -186,18 +187,18 @@ section1 {
     margin-top: 10px;
 }
 
-.Contact-Logo {
+.contactlogo {
     /* Single Logos in Contact.html */
     text-align: center;
     width: 10%;
-	height: 10%;
-	position: relative;
+    height: 10%;
+    position: relative;
     padding-top: 1vh;
     padding-bottom: 1vh;
     display: inline-flex;
 }
 
-.ContactMethods {
+.contactmethods {
     /* Main Contact Methods Group */
     width: 80%;
     margin-left: auto;
@@ -293,12 +294,12 @@ h6 {
     border: 0.5vh solid red;
     border-radius: 5vh;
     padding: 1vh;
-    
+
 }
 
 /* Calculator */
 
-.Calculator-result {
+.calculatorresult {
     /* Result of the calculation */
     font-weight: bolder;
     font-size: 5vh;
@@ -450,7 +451,7 @@ ul.Menu.-floating.-visible {
 .Menu > li ul .Icon,
 .Menu.-floating .Icon,
 .Menu > li ul *[data-icon]:before,
-.Menu.-floating *[data-icon]:before,
+.Menu.-floating *[data-icon]:before
     {
     font-size: 2.5vh;
 }

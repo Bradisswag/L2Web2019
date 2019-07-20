@@ -1,8 +1,10 @@
 <!doctype html>
+<html lang="en">
 
 <head>
     <title>Skinz</title>
     <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
 </head>
 
 
@@ -15,7 +17,7 @@
         <li><a href="Info.html">Info</a></li>
     </ul>
 
-    <section1>
+    <section class="section1">
         <div class="infosection">
             <h1>Info</h1>
 
@@ -32,20 +34,20 @@
                 <!--<h1 class="text5"></h1>-->
 
                 <ul class="Menu -vertical">
-                    <li class="-hasSubmenu"> <a href="#" id="Alienware">Alienware</a>
+                    <li class="-hasSubmenu"> <a href="#" id="lienware">Alienware</a>
                         <ul>
-                            <li class="-hasSubmenu"> <a href="#" id="Alienware-Slim">Slim Alienware Laptops</a>
+                            <li class="-hasSubmenu"> <a href="#" id="alienwareslim">Slim Alienware Laptops</a>
                                 <ul>
-                                    <li><a href="#" id="Alienware-m17">Alienware m17</a></li>
-                                    <li><a href="#" id="Alienware-m15">Alienware m15</a></li>
-                                    <li><a href="#" id="Alienware-New-m15">New Alienware m15</a></li>
-                                    <li><a href="#" id="Alienware-Area-51m">Alienware Area-51m</a></li>
+                                    <li><a href="#" id="alienwarem17">Alienware m17</a></li>
+                                    <li><a href="#" id="alienwarem15">Alienware m15</a></li>
+                                    <li><a href="#" id="alienwarenewm15">New Alienware m15</a></li>
+                                    <li><a href="#" id="alienwarearea51m">Alienware Area-51m</a></li>
                                 </ul>
                             </li>
-                            <li class="-hasSubmenu"> <a href="#" id="Alienware-Bulk">Bulkier Alienware Laptop</a>
+                            <li class="-hasSubmenu"> <a href="#" id="alienwarebulk">Bulkier Alienware Laptop</a>
                                 <ul>
-                                    <li><a href="#" id="Alienware-17">Alienware 17</a></li>
-                                    <li><a href="#" id="Alienware-15">Alienware 15</a></li>
+                                    <li><a href="#" id="alienware17">Alienware 17</a></li>
+                                    <li><a href="#" id="alienware15">Alienware 15</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -54,7 +56,7 @@
                 <br>
                 <br>
                 <h2>Your Display Size is: </h2>
-                <p class="Calculator-result" id="Result"></p>
+                <p class="calculatorresult" id="result"></p>
                 <br>
                 <script>
                     (function() {
@@ -136,36 +138,36 @@
                             end = new Date().getTime();
                         }
                     }
-                    
-                    document.getElementById("Alienware").addEventListener("click", function(){
-                        document.getElementById("Result").innerHTML = "Select your model.";
+
+                    document.getElementById("alienware").addEventListener("click", function() {
+                        document.getElementById("result").innerHTML = "Select your model.";
                     })
                     /* Slim */
-                    document.getElementById("Alienware-m17").addEventListener("click", function() {
+                    document.getElementById("alienwarem17").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("Result").innerHTML = "17.3 Inches";
+                        document.getElementById("result").innerHTML = "17.3 Inches";
                     })
-                    document.getElementById("Alienware-m15").addEventListener("click", function() {
+                    document.getElementById("alienwarem15").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("Result").innerHTML = "15.6 Inches";
+                        document.getElementById("result").innerHTML = "15.6 Inches";
                     })
-                    document.getElementById("Alienware-New-m15").addEventListener("click", function() {
+                    document.getElementById("alienwarenewm15").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("Result").innerHTML = "15.6 Inches";
+                        document.getElementById("result").innerHTML = "15.6 Inches";
                     })
-                    document.getElementById("Alienware-Area-51m").addEventListener("click", function() {
+                    document.getElementById("alienwarearea51m").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("Result").innerHTML = "17.3 Inches";
+                        document.getElementById("result").innerHTML = "17.3 Inches";
                     })
 
                     /* Bulkier */
-                    document.getElementById("Alienware-17").addEventListener("click", function() {
+                    document.getElementById("alienware17").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("Result").innerHTML = "17.3 Inches";
+                        document.getElementById("result").innerHTML = "17.3 Inches";
                     })
-                    document.getElementById("Alienware-15").addEventListener("click", function() {
+                    document.getElementById("alienware15").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("Result").innerHTML = "15.6 Inches";
+                        document.getElementById("result").innerHTML = "15.6 Inches";
                     })
 
                 </script>
@@ -173,12 +175,14 @@
         </div>
         <footer>
             <div class="footer">
-                <div class="VisitCounter">
-                    <script type="text/javascript" src="https://freehitcounters.org/count/293v"></script>
+                <div class="visitcounter">
+                    <script src="https://freehitcounters.org/count/293v"></script>
                 </div>
                 <h2>&copy; Skinz 2019.
                 </h2>
             </div>
         </footer>
-    </section1>
+    </section>
 </body>
+
+</html>
