@@ -75,13 +75,18 @@
                         var element = document.getElementById("firstname");
                         if (typeof element !== "undefined" && element.value == '') {
                             document.getElementById("nameresult").innerHTML = "Please input your name.";
+                            
+                            document.getElementById("selectmodel").innerHTML = " ";
+                            document.getElementById("result").innerHTML = " ";
                         } else {
                             var firstname1 = document.getElementById("firstname").value;
                             document.getElementById("nameresult").innerHTML = "";
                             document.getElementById("selectmodel").innerHTML = "Hello, " + firstname1 + ". Select your laptop model.";
                         }
-
-
+                    }
+                    function nameonly(){
+                        var firstname1 = document.getElementById("firstname").value;
+                        document.getElementById("selectmodel").innerHTML = firstname1 + ", ";
                     }
                     (function() {
                         function $(selector, context) {
@@ -177,6 +182,7 @@
                     document.getElementById("alienwarem17").addEventListener("click", function() {
                         wait(1000);
                         document.getElementById("result").innerHTML = screendisplay + "17.3 Inches";
+                        nameonly();
                         buttonFunction();
                     })
                     document.getElementById("alienwarem15").addEventListener("click", function() {
