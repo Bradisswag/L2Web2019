@@ -26,15 +26,27 @@
                 <h3>Skinz is a unique website that sells Skin designs for laptops.</h3>
                 <h3>We specalise in Skins for any laptop. Find your laptop size using the calulator below!</h3>
             </div><br><br>
+
+            <div class="entername">
+                <form><br>
+                    Enter your First Name: <input class="textinput" type="text" placeholder="First Name" id="firstname" /><br>
+                    <br>
+                    <input class="buttons" type="submit" value=" Submit " onclick="formdata()" /><br>
+                </form>
+            </div>
+            <br>
+            <p class="wrongname" id="nameresult"></p>
+            <br>
             <div class="calculator">
                 <h2>Calculator:</h2>
                 <h3>Get the size of your alienware laptop using this awesome calculator!</h3>
                 <br>
+                <p class="calculatorresult" id="selectmodel"></p>
                 <br>
                 <!--<h1 class="text5"></h1>-->
 
                 <ul class="Menu -vertical">
-                    <li class="-hasSubmenu"> <a href="#" id="lienware">Alienware</a>
+                    <li class="-hasSubmenu"> <a href="#" id="alienware">Alienware</a>
                         <ul>
                             <li class="-hasSubmenu"> <a href="#" id="alienwareslim">Slim Alienware Laptops</a>
                                 <ul>
@@ -55,10 +67,22 @@
                 </ul>
                 <br>
                 <br>
-                <h2>Your Display Size is: </h2>
                 <p class="calculatorresult" id="result"></p>
+                <p class="calculatorresult" id="buttonAppear"></p>
                 <br>
                 <script>
+                    function formdata() {
+                        var element = document.getElementById("firstname");
+                        if (typeof element !== "undefined" && element.value == '') {
+                            document.getElementById("nameresult").innerHTML = "Please input your name.";
+                        } else {
+                            var firstname1 = document.getElementById("firstname").value;
+                            document.getElementById("nameresult").innerHTML = "";
+                            document.getElementById("selectmodel").innerHTML = "Hello, " + firstname1 + ". Select your laptop model.";
+                        }
+
+
+                    }
                     (function() {
                         function $(selector, context) {
                             context = context || document;
@@ -139,37 +163,44 @@
                         }
                     }
 
-                    document.getElementById("alienware").addEventListener("click", function() {
-                        document.getElementById("result").innerHTML = "Select your model.";
-                    })
+                    function websiteRedirect() {
+                        window.location.href = "https://www.sbhs.school.nz";
+                    }
+
+                    function buttonFunction() {
+                        document.getElementById("buttonAppear").innerHTML = '<button class="buttons" onclick="websiteRedirect()"> Go to our shop > </button>';
+                    }
+
+                    var screendisplay = "Your screen display size is: "
+
                     /* Slim */
                     document.getElementById("alienwarem17").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("result").innerHTML = "17.3 Inches";
+                        document.getElementById("result").innerHTML = screendisplay + "17.3 Inches";
+                        buttonFunction();
                     })
                     document.getElementById("alienwarem15").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("result").innerHTML = "15.6 Inches";
+                        document.getElementById("result").innerHTML = screendisplay + "15.6 Inches";
                     })
                     document.getElementById("alienwarenewm15").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("result").innerHTML = "15.6 Inches";
+                        document.getElementById("result").innerHTML = screendisplay + "15.6 Inches";
                     })
                     document.getElementById("alienwarearea51m").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("result").innerHTML = "17.3 Inches";
+                        document.getElementById("result").innerHTML = screendisplay + "17.3 Inches";
                     })
 
                     /* Bulkier */
                     document.getElementById("alienware17").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("result").innerHTML = "17.3 Inches";
+                        document.getElementById("result").innerHTML = screendisplay + "17.3 Inches";
                     })
                     document.getElementById("alienware15").addEventListener("click", function() {
                         wait(1000);
-                        document.getElementById("result").innerHTML = "15.6 Inches";
+                        document.getElementById("result").innerHTML = screendisplay + "15.6 Inches";
                     })
-
                 </script>
             </div>
         </div>
@@ -183,6 +214,4 @@
             </div>
         </footer>
     </section>
-</body>
-
-</html>
+</body></html>

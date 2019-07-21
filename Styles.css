@@ -297,7 +297,31 @@ h6 {
 
 }
 
+.textinput {
+    font-size: 2.5vh;
+}
+
+.entername {
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    font-weight: bolder;
+    font-size: 3.5vh;
+    color: black;
+    border: 0.2vh solid white;
+    border-radius: 10vh;
+    cursor: pointer;
+}
 /* Calculator */
+.wrongname {
+    /* Result of the name not being submitted */
+    font-weight: bolder;
+    font-size: 5vh;
+    color: red;
+}
 
 .calculatorresult {
     /* Result of the calculation */
