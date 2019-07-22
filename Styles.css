@@ -315,6 +315,12 @@ h6 {
     border-radius: 10vh;
     cursor: pointer;
 }
+.buttons:hover {
+    color: mediumpurple
+}
+.buttons:active {
+    color: mediumpurple
+}
 /* Calculator */
 .wrongname {
     /* Result of the name not being submitted */
