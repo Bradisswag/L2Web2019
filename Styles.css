@@ -37,18 +37,19 @@ html {
     display: flex;
     justify-content: flex-end;
     margin-top: 3vh;
-    padding: 1vh 0vh;
+    padding: 1.5vh 0vh;
     font-family: CaviarDreams;
 }
 
 .nav li {
     /* Text for the Nav Bar */
-    margin: 0vh 3%;
+    margin: 0vh 2%;
     text-align: right;
     font-family: CaviarDreams;
-    font-size: 5vh;
-    margin-right: 15vh;
+    font-size: 4.5vh;
+    margin-right: 5vh;
     font-weight: bold;
+    margin: auto;
 }
 
 a {
