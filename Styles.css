@@ -31,13 +31,24 @@ html {
     list-style: none;
 }
 
+.logo {
+    /* Skinz Logo on the left of the Nav Bar */
+    width: auto;
+    height: 10vh;
+    text-align: left;
+    margin: -2vh 2.5%;
+    margin-left: 0vh;
+}
+
 .nav {
     /* Nav Bar (Navigation Bar) */
     background-color: white;
     display: flex;
     justify-content: flex-end;
     margin-top: 3vh;
-    padding: 1.5vh 0vh;
+    padding: 1vh;
+    width: auto;
+    height: 6vh;
     font-family: CaviarDreams;
 }
 
@@ -46,7 +57,7 @@ html {
     margin: 0vh 2%;
     text-align: right;
     font-family: CaviarDreams;
-    font-size: 4.5vh;
+    font-size: 4vh;
     margin-right: 5vh;
     font-weight: bold;
     margin: auto;
@@ -65,15 +76,6 @@ a:active {
 a:hover {
     /* Link color if hovered over the text */
     color: mediumpurple
-}
-
-img {
-    /* Skinz Logo on the left of the Nav Bar */
-    width: 5%;
-    margin-left: 2vh;
-    position: absolute;
-    text-align: left;
-    margin-top: -1vh;
 }
 
 .visitcounter {
@@ -108,6 +110,8 @@ h1 {
     /* Product Icon */
     text-align: center;
     padding: 1vh;
+    height: 25vh;
+    width: auto;
 }
 
 .right {
@@ -191,8 +195,8 @@ footer {
 .contactlogo {
     /* Single Logos in Contact.html */
     text-align: center;
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     position: relative;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -226,7 +230,7 @@ footer {
 
 .lp {
     /* Laptop Products images */
-    height: 40vh;
+    height: 30vh;
     width: auto;
     margin-left: 2vh;
     position: inherit;
